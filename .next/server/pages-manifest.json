@@ -1,22 +1,7 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/About": "pages/About.html",
-  "/Anime": "pages/Anime.html",
-  "/Login": "pages/Login.html",
-  "/Manga": "pages/Manga.html",
-  "/Music": "pages/Music.html",
-  "/Signup": "pages/Signup.html",
-  "/anime/[id]": "pages/anime/[id].html",
-  "/api/hello": "pages/api/hello.js",
-  "/api/users/login": "pages/api/users/login.js",
-  "/api/users/register": "pages/api/users/register.js",
-  "/": "pages/index.html",
-  "/itest": "pages/itest.html",
-  "/manga/[id]": "pages/manga/[id].html",
-  "/postsearch": "pages/postsearch.html",
-  "/seethings": "pages/seethings.html",
-  "/test": "pages/test.html",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js",
+  "/anime/[id]": "pages/anime/[id].js",
+  "/": "pages/index.js"
 }

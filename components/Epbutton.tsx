@@ -12,8 +12,6 @@ interface Props{
 
 function Epbutton({key,value,id,info,chooseEpisode}:Props) {
 
-  
-
     const makeTitleStreamable=(str:string)=>{
         const res=str.toLowerCase().replace(/[^a-zA-Z0-9x ]/g, " ").trim().split(' ').join('-').replace(/-+/gi,`-`);
         function correctTitle(str:string){   
@@ -41,15 +39,12 @@ function Epbutton({key,value,id,info,chooseEpisode}:Props) {
     const [movie,setMovie]= useState(" ")
 
     const getEpisode= async()=>{
+      
         const EpisodeLink=await (await fetch(`https://api.consumet.org/anime/gogoanime/watch/${title}-episode-${value}`)).json()
         console.log(makeTitleStreamable(EpisodeLink.headers.Referer))
         setEpisode(EpisodeLink.headers.Referer)
         }
-    const getMovie= async()=>{
-        const EpisodeLink=await(await fetch(`https://api.consumet.org/anime/gogoanime/watch/${makeTitleStreamable(title)}`)).json()
-        console.log(makeTitleStreamable(EpisodeLink.headers.Referer))
-        setMovie(EpisodeLink.headers.Referer)
-        }
+    
   return (
     <div>
         <button className='bg-gradient-to-br bg-no-repeat bg-fixed from-purple-800 to-rose-700 text-white hover:bg-purple-600 p-3 w-24 m-2 border-2 border-white rounded-2xl' value={value}
