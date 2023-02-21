@@ -98,8 +98,8 @@ function Media() {
                   </>
                 {" "}
                 {" "}
-                  {data.Media.genres.map((genre: string) => (
-                    <button className="mx-2 p-2 bg-slate-200 text-black">
+                  {data.Media.genres.map((genre: string,key:number) => (
+                    <button key={data.Media.id} className="mx-2 p-2 bg-slate-200 text-black">
                       {genre}
                     </button>
                   ))}

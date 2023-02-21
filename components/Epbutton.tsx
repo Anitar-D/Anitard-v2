@@ -6,10 +6,11 @@ interface Props{
     value:string | number | readonly string[] | undefined;
     id:number;
     info:reception;
+    key:number;
     chooseEpisode: (eplink: string) => void
 }
 
-function Epbutton({value,id,info,chooseEpisode}:Props) {
+function Epbutton({key,value,id,info,chooseEpisode}:Props) {
 
   
 

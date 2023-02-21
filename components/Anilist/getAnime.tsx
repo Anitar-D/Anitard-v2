@@ -66,7 +66,7 @@ const getAnimeDetails = gql`
       }
     }`;
 
-
+// eslint-disable-line react-hooks/rules-of-hooks
 export default function getAnime(
   id: Number,
   type: "ANIME",

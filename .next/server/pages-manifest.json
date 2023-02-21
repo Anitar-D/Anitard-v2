@@ -2,5 +2,21 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/About": "pages/About.html",
+  "/Login": "pages/Login.html",
+  "/Anime": "pages/Anime.html",
+  "/Music": "pages/Music.html",
+  "/Manga": "pages/Manga.html",
+  "/anime/[id]": "pages/anime/[id].html",
+  "/Signup": "pages/Signup.html",
+  "/api/users/login": "pages/api/users/login.js",
+  "/api/users/register": "pages/api/users/register.js",
+  "/api/hello": "pages/api/hello.js",
+  "/itest": "pages/itest.html",
+  "/manga/[id]": "pages/manga/[id].html",
+  "/postsearch": "pages/postsearch.html",
+  "/seethings": "pages/seethings.html",
+  "/test": "pages/test.html",
+  "/": "pages/index.html",
+  "/404": "pages/404.html"
 }
